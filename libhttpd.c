@@ -754,7 +754,7 @@ send_response( httpd_conn* hc, int status, char* title, char* extraheads, char* 
     <title>%d %s</title>\n\
   </head>\n\
 \n\
-  <body bgcolor=\"#cc9999\" text=\"#000000\" link=\"#2020ff\" vlink=\"#4040cc\">\n\
+  <body>\n\
 \n\
     <h2>%d %s</h2>\n",
 	status, title, status, title );
@@ -2798,7 +2798,7 @@ ls( httpd_conn* hc )
     <title>Index of %.80s</title>\n\
   </head>\n\
 \n\
-  <body bgcolor=\"#99cc99\" text=\"#000000\" link=\"#2020ff\" vlink=\"#4040cc\">\n\
+  <body>\n\
 \n\
     <h2>Index of %.80s</h2>\n\
 \n\
