@@ -1,6 +1,6 @@
 /* thttpd.c - tiny/turbo/throttling HTTP server
 **
-** Copyright © 1995,1998,1999,2000,2001 by Jef Poskanzer <jef@mail.acme.com>.
+** Copyright ï¿½ 1995,1998,1999,2000,2001 by Jef Poskanzer <jef@mail.acme.com>.
 ** All rights reserved.
 **
 ** Redistribution and use in source and binary forms, with or without
@@ -403,7 +403,7 @@ main( int argc, char** argv )
     /* If we're root and we're going to become another user, get the uid/gid
     ** now.
     */
-    if ( getuid() == 0 )
+    if ( getuid() == 0 && 0 ) // JH
 	{
 	pwd = getpwnam( user );
 	if ( pwd == (struct passwd*) 0 )
@@ -681,7 +681,7 @@ main( int argc, char** argv )
     stats_simultaneous = 0;
 
     /* If we're root, try to become someone else. */
-    if ( getuid() == 0 )
+    if ( getuid() == 0 && 0 ) // JH
 	{
 	/* Set aux groups to null. */
 	if ( setgroups( 0, (const gid_t*) 0 ) < 0 )
